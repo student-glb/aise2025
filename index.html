@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>AISE-2025</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="./popup/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+      <script type="text/javascript" src="./popup/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+      <link rel="stylesheet" type="text/css" href="./popup/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- slide benner-->
+			<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+			<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>-->
+			<script src="script/jquery.nivo.slider.js" type="text/javascript"></script>
+			<script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+			<script type="text/javascript">
+			window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:0,d:1000,o:1}],
+              [{b:0,d:1000,y:-88,ls:0.1,e:{y:3,ls:1}}],
+              [{b:-1,d:1,da:[0,2000]},{b:600,d:1500,da:[460,2000],e:{da:1}}],
+              [{b:1600,d:500,o:0.4}],
+              [{b:1500,d:500,o:0.4}],
+              [{b:1400,d:500,o:0.7}],
+              [{b:600,d:1000,o:1}],
+              [{b:-1,d:1,tZ:-100},{b:600,d:1000,x:668,y:302,rY:12,tZ:-30,e:{x:1,y:1,rY:1,tZ:1}}],
+              [{b:-1,d:1,tZ:-20}],
+              [{b:-1,d:1,tZ:20}],
+              [{b:-1,d:1,da:[460,2000]},{b:1200,d:1500,da:[760,2000],e:{da:1}}],
+              [{b:1200,d:500,o:0.4}],
+              [{b:1100,d:500,o:0.4}],
+              [{b:1000,d:500,o:0.7}],
+              [{b:0,d:1500,y:60,o:1,e:{y:1}}],
+              [{b:-1,d:1,ls:1},{b:0,d:1500,o:1,ls:0,e:{ls:1}}],
+              [{b:-1,d:1,da:[760,2000]},{b:1600,d:1500,da:[1040,2000],e:{da:1}}],
+              [{b:1600,d:500,o:0.4}],
+              [{b:1500,d:500,o:0.4}],
+              [{b:1400,d:500,o:0.7}],
+              [{b:-1,d:1,so:1},{b:0,d:1000,so:0,e:{so:1}}],
+              [{b:-1,d:1,rY:-20}],
+              [{b:-1,d:1,so:1},{b:1000,d:1000,so:0,e:{so:1}}],
+              [{b:-1,d:1,rY:-20}],
+              [{b:-1,d:1,ls:2},{b:0,d:2000,y:68,o:0.7,ls:0.12,e:{y:7,ls:1}}],
+              [{b:-1,d:1,ls:2},{b:0,d:2000,y:68,o:0.7,ls:0.12,e:{y:7,ls:1}}],
+              [{b:1100,d:1200,y:-40,o:1},{b:2300,d:1200,y:-80,o:0}],
+              [{b:1700,d:1200,y:-40,o:1},{b:2900,d:1200,y:-80,o:0}],
+              [{b:2300,d:1200,y:-40,o:1},{b:3500,d:1200,y:-80,o:0}],
+              [{b:2900,d:1200,y:-40,o:1},{b:4100,d:1200,y:-80,o:0}],
+              [{b:3500,d:1200,y:-40,o:1},{b:4700,d:1200,y:-80,o:0}],
+              [{b:4100,d:1200,y:-40,o:1},{b:5300,d:1200,y:-80,o:0}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions,
+                $Controls: [{r:1100,e:4700},{r:1700,e:5300},{r:2300,e:5900},{r:2900,e:6500},{r:3500,e:7100},{r:4100,e:7700}]
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 20,
+                $SpacingY: 20
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1300;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+      .blink {
+        animation: blinker 0.8s linear infinite;
+        color: #84081D;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+     
+    </style>
+    <style>
+        /*jssor slider loading skin double-tail-spin css*/
+        .jssorl-004-double-tail-spin img {
+            animation-name: jssorl-004-double-tail-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-004-double-tail-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 071 css*/
+        .jssorb071 .i {position:absolute;color:#fff;font-family:"Helvetica neue",Helvetica,Arial,sans-serif;text-align:center;cursor:pointer;z-index:0;}
+        .jssorb071 .i .b {fill:#000;opacity:.2;}
+        .jssorb071 .i:hover {opacity:.7;}
+        .jssorb071 .iav {color:#000;}
+        .jssorb071 .iav .b {fill:#fff;opacity:1;}
+        .jssorb071 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+	 
+	<!-- End slide benner   
+	  <style>
+      .gallery img{
+         width:200px;
+         height:150px;
+         padding: 0 5px 0 5px;
+         cursor: pointer;
+    }
+      </style>
+	   <script type="text/javascript">
+         $(document).ready(function() {
+            $("a.gallery").fancybox();
+         });
+      </script>-->   
+	  
+	  <script>
+         function functionAlert(msg, myYes) {
+            var confirmBox = $("#confirm");
+            confirmBox.find(".message").text(msg);
+            confirmBox.find(".yes").unbind().click(function() {
+               confirmBox.hide();
+            });
+            confirmBox.find(".yes").click(myYes);
+            confirmBox.show();
+         }
+      </script>
+      <style>
+         #confirm {
+            display:none;
+            background-color: #800000;
+            color: #ffffff;
+            border: 2px solid #aaa;
+            position:Fixed; 
+            width: 40%;
+          
+            left:30%;
+			top:20%;
+            margin-left: -100;
+            padding: 10px 20px 10px;
+            box-sizing: border-box;
+            text-align: center;
+         }
+         #confirm button {
+            background-color: #FFFFFF;
+            display: inline-block;
+            border-radius: 12px;
+            border: 4px solid #aaa;
+            padding: 5px;
+            text-align: center;
+            width: 60px;
+            cursor: pointer;
+         }
+         #confirm .message {
+            text-align: center;
+         }
+      </style>
+
+      </head>
+      <!--onload="javascript:functionAlert()"-->
+   <body  class="size-960" style="background-color: none;">
+      <div id="confirm">
+         <div class="message" align="center">AISE -2020 respects the edicts of all the countries regarding the ongoing pandemic COVID 2019 and thus has decided to reschedule the conference dates to January 18<sup>th</sup>-20<sup>th</sup>, 2021 instead of November 27<sup>th</sup> -29<sup>th</sup>, 2020.</div>
+         <button class="yes">OK</button>
+      </div>
+	  <!-- HEADER -->
+      <header>
+            <div>
+            <div class="box">
+               <div class="s-12 l-2">
+                  <img class="s-5 l-9 center" src="img/logo.jpg">
+               </div>
+			   <div class="s-12 m-7 l-8">
+			   <div align="center" align="center"><img src="img/springer_logo.jpg" height="20"></div>
+               <div align="center" style="font-size: 22px; line-height:1em; color:#130A3C"><strong>INTERNATIONAL CONFERENCE<br />on<br />Artificial Intelligence and Sustainable Engineering <br />
+				(AISE-2025)</strong><br/></div> 
+					<div align="center" style="font-size: 16px; line-height:1.3em; color:#130A3C"><strong><font color="#A92936">June 25<sup>th</sup>&nbsp;- 26<sup>th</sup>,2025</font></strong><br/><strong>Hosted at</strong></div><div style="font-size: 22px; color:#130A3C"" align="center"><strong>Faculty of Information Technology, Yarsi University, Jakarta, Indonesia</strong></div>
+					 <!--<div align="center" style="font-size: 16px; line-height:1.5em; color:#130A3C"><div><strong><font color="#A92936"><p class="blink"><a href="tracks/inaugural_ceremony.pdf" target="_blink" style="color:#84081D;">Inaugural Ceremony, 18 January 2021, Indian Time 10:00 AM</a></p></font></strong></div></div>-->
+				
+			   </div>
+			    <div class="s-12 l-2">
+                  <img class="s-5 l-9 center" src="img/logo_yarsi.png">
+                    <!--<a href="http://www.nitgoa.ac.in/aise2020" target="_blink" style="color:#84081D;"><img class="s-5 l-9 center" src="tracks/livestream.jpg"></a>-->
+				
+                </div>			   	  		  
+            </div>
+         </div>
+  
+         <!-- TOP NAV -->
+         <div class="">
+            <nav class="margin-bottom">
+               <div class="top-nav s-12">
+                     <ul>
+					    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					    <li><a href="index.html">&nbsp;&nbsp;&nbsp;Home</a></li>
+						<li>
+                              <a aria-haspopup="false">Committees</a>
+                              <ul>
+                                 <li><a href="patrons_chairs.html">Patrons & Chairs</a></li>
+                                 <li><a href="Editors.html">Editorial Board</a></li>
+                                 <li><a  href="advisory.html">Advisory Committee</a></li>
+								<!-- <li><a>Organizing Committee</a></li>  --->
+								 <li><a href="tpc.html">Technical Program Committee</a></li>
+							</ul>
+                        </li>
+                        <li><a href="callforpaper.html">Call for Paper</a></li>
+						<li><a href="specialsession.html">Special Sessions</a></li>
+						<li><a href="speakers.html">Speakers</a></li>
+                        <li><a href="papersubmission.html">Paper Submission</a></li>
+                        
+                        <li>
+                              <a aria-haspopup="false">Conference Schedule</a>
+                              <ul>
+                                 <li><a href="#">Program Schedule</a></li>
+                                 <li><a href="#">Paper Presentation Schedule</a></li>
+							</ul>
+                        </li>
+                        
+                        <li><a href="Registration.html">Registration</a></li>
+						<!--<li><a href="#sponsorship.html">Sponsorship</a></li>--->
+						<!--<li><a href="aboutgoa.html">About Goa</a></li>-->
+						<li><a href="contactus.html">Contact Us</a></li>
+						  
+                     
+					 </ul>
+               </div>
+            </nav>
+         </div>
+		 
+		 
+		  <div class="">
+		       <div class="">
+		<!-- slide show -->		
+						<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:305px;overflow:hidden;visibility:hidden;margin-right:20;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/double-tail-spin.svg" />
+        </div>
+		
+		
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:305px;overflow:hidden;">
+           <div data-p="735"><img data-u="image" src="img1/1.jpg" /></div>
+           <div data-p="735"><img data-u="image" src="img1/3.jpg" /></div>
+		   <div data-p="735"><img data-u="image" src="img1/4.jpg" /></div>
+		   <div data-p="735"><img data-u="image" src="img1/5.jpg" /></div>
+		  <!-- <div data-p="735"><img data-u="image" src="img1/6.jpg" /></div>-->
+           <div data-p="735"><img data-u="image" src="img1/2.jpg" /></div>
+		</div>
+		
+			<a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">animation</a>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb071" style="position:absolute;bottom:20px;right:20px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:24px;height:24px;font-size:12px;line-height:24px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;">
+                    <circle class="b" cx="8000" cy="8000" r="6666.7"></circle>
+                </svg>
+                <div data-u="numbertemplate" class="n"></div>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+	</div>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
+    </div>
+		<!-- End slide show -->				
+						
+			  
+	     </div>
+		 <!-- Marquee NAV -->
+                 <div class="">
+                                  <marquee direction="left" scrollamount="7" onmouseover="this.stop();" onmouseout="this.start()"; style="background-color:Maroon;">
+                     <strong style="font-size:20px; color:White; "><a href="tracks/inaugural_ceremony.pdf" target="_blink" style="color:white;"><!--Inaugural Ceremony, 18 January 2021, Indian Time 10:00 AM &nbsp;&nbsp; |&nbsp;&nbsp;</a><a href="http://www.nitgoa.ac.in/aise2020" target="_blink" style="color:white;">Link for Inaugural Ceremony : http://www.nitgoa.ac.in/aise2020 &nbsp;&nbsp; |&nbsp;&nbsp;</a>--> Peer reviewed, selected  and presented papers will be published in conference proceedings with Springer in their prestigious “ Lecture Notes in Electrical Engineering (LNEE)“ Series </strong>
+				 </marquee>
+		 </div>
+      </header>
+      <section>
+
+         <!-- ASIDE NAV AND CONTENT -->
+         <div class="line">
+            <div class="box margin-bottom">
+               <div class="margin">
+                  <!-- CONTENT -->
+                  <article class="s-12 m-7 l-8" style="padding-right: 25px">
+                  <h4><font color='black'>About the Conference</font></h4>
+					 <img src="img/line.jpg" />
+					 <h6></h6>
+                     <p style="font-family:Arial;" align="justify">Artificial Intelligence (AI) plays a vital role in every area of life now a days. Artificial intelligence not only creates opportunities but also brings greater challenges to the sustainable development of engineering products. AI is helping the next generation of companies to reduce their environmental and social impact by improving efficiency and developing new products.</p> 
+					 <p style="font-family:Arial;" align="justify">Therefore, the relationship between AI and sustainable engineering is worth studying. To prioritize sustainable development, AI is a massive technological boost. Sustainability is the greatest challenge in a variety of areas like AI, AR/VR, Robotics, IoT, non-conventional energy and environment, agriculture, health, transportation, etc. It is believed that AI, data analytics and data sciences have significant roles to play in evidence based policy making to support sustainability, as well as providing a tool to monitor and achieve sustainable engineering goals.</p> 
+			         <p style="font-family:Arial;" align="justify">AISE 2021 envisions the goal of unifying scientists, researchers and participants from academic as well as industry to present their ideas, innovations and brainstorm to ignite the minds of attendees and peers together in addressing a variety of sustainability challenges across the domains to discuss the challenges and opportunities for sustainable engineering based on AI and supporting tools. The conference will focus on how the AI is useful in achieving the truly sustainable solutions through sharing innovative ideas using transdisciplinary research.</p>
+                     <h4><font color='black'>About Yarsi University, Jakarta, Indonesia</font></h4>
+					 <img src="img/line.jpg" />
+					 <h6></h6>
+                     <p style="font-family:Arial;" align="justify">
+			            YARSI University was founded by the Indonesian Islamic Hospital Foundation (YARSI) initially as the YARSI Medical College on April 15 1967 with one medical study program. The establishment of the YARSI Medical College started out of concern over the scarcity of medical personnel in Indonesia and the very backwardness of Muslims in participating in the field of health services and education. At that time in Jakarta there was not a single medical educational institution or hospital managed by an Islamic institution. Along the way, in 1969, in accordance with the provisions of law number 22 of 1961, this institution was transformed into the YARSI Medical College. With the existence of this educational institution, opportunities are open for prospective students to receive medical education equipped with the Islamic faith which guides people about the nature of life which basically only seeks the pleasure of ALLAH SWT.		 
+					 </p> 
+                     <h4><font color='black'>Conference Tracks<font></h4>
+		             <img src="img/line.jpg" />
+		             <h6></h6>
+                     <p style="font-family:Arial;" align="justify">The research papers are invited in the following tracks and areas but are not limited to.</p>
+		             <h4><font color='black'>Track-1: Intelligent and Efficient Applications</font></h4>	 		
+	                 <UL>
+<li>IoT for Modern Life</li>
+<li>Image Processing / Bio-informatics</li>
+<li>Communication Technologies</li>
+<li>Gesture Technology</li>
+<li>Virtual Intelligence</li>
+<li>Information fusion</li>
+<li>Audio and Speech processing</li>
+<li>Data mining with big data</li>
+<li>AI and Machine learning and computing</li>
+</UL>
+<h4><font color='black'> Track-2: Sustainable Engineering & Automation </font></h4>	 		
+<UL>
+<li>Engineering design for sustainable development using IOT/AI</li>
+<li>Smart Cities</li>
+<li>Industry 4.0</li>
+<li>Sustainable material development and process engineering</li>
+<li>Energy conservation using Technology</li>
+<li>Waste minimisation, remanufacturing, reuse and recycling technologies using IOT/AI</li>
+<li>Green Engineering / Technology</li>
+<li>Robotic Process Automation (RPA)</li>
+<li>Water and Air Quality Management</li>
+</UL>
+</article>
+                  <!-- ASIDE NAV -->
+                  <div class="s-12 m-5 l-4">
+				    
+                     <div class="aside-nav">
+					 <h4><font color='black'>Publishing & Indexing</font></h4>
+					 <img src="img/line.jpg" />	
+					 <p style="font-family:Arial;" align="justify"><font color='black'>Peer reviewed, selected and presented papers will be published in conference proceedings with Springer.</font></p>
+					 <!-- <div align="center"><img src="img/lnct-s.jpg"/></div> -->              
+					<br/>	
+                                  <img src="img/line.jpg" />					
+								 
+								 <!--<div align="center"><img src="img/ass.jpg" height="100%" width="100%"/></div>-->
+ 							     <!--<div align="right"><img src="img/ass_pic.jpg" height="100%" width="100%"/></div>-->
+                                 
+						  <!-- <iframe width="290" height="280" src="slideshow.html" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                    <br />
+					<div align="center">
+					<p align="Left"><strong>Download Brochure</strong></p>
+					<img src="img/line.jpg" />	
+					Coming Soon...........<!--<a href="Brochure_aise2021.pdf" target="_blink"><img style="border: 5px solid #555;" src="b.jpg" width="200" height="200" align="center" bgcolor="black"/></a>-->
+					 </div> 
+					 <br />
+					<img src="img/line.jpg" />
+					 
+                     <h4><font color='black'>Important Dates</font></h4>
+					 <img src="img/line.jpg" />
+					 <h6></h6>
+                     <div class="aside-nav">
+                           <iframe width="300" height="330" src="notice.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     <br/><img src="img/line_info.jpg" width="280" />
+					 </div>
+                  </div>
+				  <!---
+					 <div class="aside-nav">
+				              
+
+							  <iframe width="350" height="370" src="news.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+    				</div>----------->
+                  
+				  
+				  
+				  
+               </div>
+            </div>
+         </div>
+		 </div>
+	
+         <!-- GALLERY CAROUSEL
+        <div class="text-center ">
+            <div style="background-color: Gray"><h4 class="margin-bottom"><a href="#">Gallery</a></li></h4></div>
+            <div id="gallery-carousel" class="owl-carousel owl-theme margin-bottom">
+               <div class="item"><a class="gallery" href="./images/news1.jpg"><img src="./images/news1.jpg" alt=""></a></div>
+			   <div class="item"><a class="gallery" href="./images/news2.jpg"><img src="./images/news2.jpg" alt=""></a></div>
+						
+			   <div class="item"><a class="gallery" href="./images/news3.jpg"><img src="./images/news3.jpg" alt=""></a></div>
+			   <div class="item"><a class="gallery" href="./images/news4.jpg"><img src="./images/news4.jpg" alt=""></a></div>
+			    <div class="item"><a class="gallery" href="./images/news5.jpg"><img src="./images/news5.jpg" alt=""></a></div>
+			   <div class="item"><a class="gallery" href="./images/news6.jpg"><img src="./images/news6.jpg" alt=""></a></div>
+			   <div class="item"><a class="gallery" href="./images/news7.jpg"><img src="./images/news7.jpg" alt=""></a></div>
+			   <div class="item"><a class="gallery" href="./images/news8.jpg"><img src="./images/news8.jpg" alt=""></a></div>
+			 		   
+            </div>
+         </div>
+		 -->
+      </section>
+      <!-- FOOTER -->
+      <footer class="">
+         <div class="box" style="background:#142731;">
+            <div class="s-12 l-6">
+               <p style="color:#ffffff">Copyright 2025@AISE</p>
+            </div>
+            <div class="s-12 l-6">
+               <a class="right" href="" title="">Developed by AISE2025 Team</a>
+            </div>
+         </div>
+      </footer>
+       <script type="text/javascript" src="js/responsee.js"></script>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+
+
+      <script type="text/javascript">
+        jQuery(document).ready(function($) {
+          var owl = $('#header-carousel');
+          owl.owlCarousel({
+           // nav: true,
+            dots: true,
+            items: 1,
+            loop: true,
+            //navText: ["&#xf007","&#xf006"],
+            autoplay: true,
+            autoplayTimeout: 3000
+          });
+          var owl = $('#gallery-carousel');
+          owl.owlCarousel({
+            //nav: false,
+            dots: true,
+            loop: false,
+            //navText: ["&#xf007","&#xf006"],
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+              0: {
+                items: 1
+              },
+              769: {
+                items: 2
+              },
+              960: {
+                items: 4
+              },
+              1276: {
+                items: 6
+              }
+			}
+          });
+        })
+      </script>
+   </body>
+</html>
